@@ -1,5 +1,10 @@
 # 약물 간 부작용을 출력해주는 application입니다. 
 
+## Overview
+safety_drug는 약물 간 부작용을 출력해 주고, 지금까지 알려지지 않은 약물 간의 부작용에 대한 가능성을 출력해 주는 application입니다.</br>
+
+## 동작 화면
+
 > 참고</br>
 
 <a href="https://github.com/mims-harvard/decagon">Decagon</a> 프로젝트를 참고했습니다. </br>
