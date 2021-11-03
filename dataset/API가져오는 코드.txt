@@ -1,0 +1,52 @@
+Sub CallOpenAPI()
+
+    Dim i As Long
+    Dim strURL As String
+    Dim strResult As String
+    
+    Dim objHttp As New MSXML2.XMLHTTP60
+    
+    For i = 1 To 100
+        strURL = "http://apis.data.go.kr/1470000/DURPrdlstInfoService/getUsjntTabooInfoList?ServiceKey=hZOud6yjbu3V9z315xcsVm6GC%2BzjKc%2Fu0v5aimfbjMAtUKF0zTkFHbxfkF8SDvjZHuBrMb4RUc8R2xnglAWmlQ%3D%3D&numOfRows=100&pageNo=" & i
+        objHttp.Open "GET", strURL, False
+        objHttp.send
+        
+        
+        If objHttp.Status = 200 Then '성공했을 경우
+            strResult = objHttp.responseText
+            
+            'XML로 연결
+            Dim objXml As MSXML2.DOMDocument60
+            Set objXml = New DOMDocument60
+            objXml.LoadXML (strResult)
+            
+            '노드 연결
+            Dim nodeList As IXMLDOMNodeList
+            Dim nodeRow As IXMLDOMNode
+            Dim nodeCell As IXMLDOMNode
+            Dim nRowCount As Integer
+            Dim nCellCount As Integer
+            
+            Set nodeList = objXml.SelectNodes("/response/body/items/item")
+            
+            nRowCount = Range("A60000").End(xlUp).Row
+            For Each nodeRow In nodeList
+                nRowCount = nRowCount + 1
+                
+                nCellCount = 0
+                For Each nodeCell In nodeRow.ChildNodes
+                    nCellCount = nCellCount + 1
+                    '엑셀에 값 반영
+                    Cells(nRowCount, nCellCount).Value = nodeCell.Text
+                Next nodeCell
+            
+            Next nodeRow
+            
+        Else
+            MsgBox "접속에 에러가 발생했습니다"
+        
+        End If
+    Next i
+    
+
+End Sub
