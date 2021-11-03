@@ -11,7 +11,7 @@ safety_drug는 약물 간 부작용을 출력해 주고, 지금까지 알려지�
 <img width="30%" src="https://user-images.githubusercontent.com/52947821/140076940-c8bed10a-9072-4dc5-9fc5-afc08d5ea9f4.gif"/>
 
 - 약물 간 부작용 및 새로운 부작용 예측 경로
-<img width="30%" src="https://user-images.githubusercontent.com/52947821/140076940-c8bed10a-9072-4dc5-9fc5-afc08d5ea9f4.gif"/>
+<img width="30%" src="https://user-images.githubusercontent.com/52947821/140079273-81de601b-9a7c-479a-953e-f6879f5e499f.gif"/>
 
 > 참고</br>
 
