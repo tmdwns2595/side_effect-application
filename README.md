@@ -13,6 +13,9 @@ safety_drug는 약물 간 부작용을 출력해 주고, 지금까지 알려지�
 - 약물 간 부작용 및 새로운 부작용 예측 경로
 <img width="30%" src="https://user-images.githubusercontent.com/52947821/140079273-81de601b-9a7c-479a-953e-f6879f5e499f.gif"/>
 
+## 사용 언어 및 툴
+
+
 > 참고</br>
 
 <a href="https://github.com/mims-harvard/decagon">Decagon</a> 프로젝트를 참고했습니다. </br>
