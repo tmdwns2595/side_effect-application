@@ -1,7 +1,7 @@
 # 약물 간 부작용을 출력해주는 application입니다. 
 
 ## Overview
-safety_drug는 약물 간 부작용을 출력해 주고, 지금까지 알려지지 않은 약물 간의 부작용에 대한 가능성을 출력해 주는 application입니다.</br>
+safety_drug는 약물 간 부작용을 출력해 주고, 지금까지 알려지지 않은 약물 간의 부작용에 대한 가능성을 출력해 주는 application입니다. Linux OS 환경에서 Anaconda 가상환경을 생성하여 python3언어를 통해 딥러닝을 진행하였으며, 이 결과를 이용해 안드로이드 스튜디오를 통해 앱을 제작했다. </br>
 
 ## 사용 언어 및 툴
 <div>
